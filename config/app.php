@@ -54,6 +54,10 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    'domain' => env('APP_DOMAIN', ''),
+
+    'telegram_token' => env('APP_TELEGRAM_TOKEN', ''),
+
     'asset_url' => env('ASSET_URL', null),
 
     /*
