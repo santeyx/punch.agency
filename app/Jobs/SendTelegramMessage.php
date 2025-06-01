@@ -2,15 +2,12 @@
 
    namespace App\Jobs;
 
-   use IlluminateBusQueueable;
-   use IlluminateContractsQueueShouldQueue;
-   use IlluminateFoundationBusDispatchable;
-   use IlluminateQueueInteractsWithQueue;
-   use IlluminateQueueSerializesModels;
+   use Illuminate\Contracts\Queue\ShouldQueue;
+   use Illuminate\Foundation\Queue\Queueable;
 
    class SendTelegramMessage implements ShouldQueue
    {
-       use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+       use Queueable;
 
        protected $chat_id;
        protected $message;
